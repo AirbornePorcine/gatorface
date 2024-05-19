@@ -4,105 +4,120 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Custom Laser Engraving Fonts</title>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Cinzel&family=Bangers&family=Permanent+Marker&family=Pacifico&family=Twinkle+Star&display=swap" rel="stylesheet">
     <style>
+        @font-face {
+            font-family: 'Social Gothic Rough';
+            src: url('social-gothic-rough.woff2') format('woff2'),
+                 url('social-gothic-rough.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'Cera Pro Bold';
+            src: url('cera-pro-bold.woff2') format('woff2'),
+                 url('cera-pro-bold.woff') format('woff');
+            font-weight: bold;
+            font-style: normal;
+        }
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Cera Pro Bold', Arial, sans-serif;
             margin: 0;
             padding: 0;
             display: flex;
             flex-direction: column;
             align-items: center;
-            background-color: #B2D235; /* Main background color */
+            background-color: #f5f5f5; /* Off-white background color */
             color: #5B513C; /* Main text color */
         }
         h1 {
             margin-top: 20px;
             color: #5B513C; /* Main heading color */
-        }
-        .font-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            margin: 20px;
-        }
-        .font-item {
-            background: white;
-            border: 1px solid #8C7B5F; /* Border color */
-            border-radius: 5px;
-            padding: 20px;
-            margin: 10px;
-            width: 200px;
             text-align: center;
-            transition: background 0.3s;
+            font-family: 'Social Gothic Rough', sans-serif;
         }
-        .font-item:hover {
-            background: #8C7B5F; /* Hover background color */
-            color: white; /* Hover text color */
+        table {
+            margin: 20px;
+            border-collapse: collapse;
+            width: 90%;
+            max-width: 1200px;
+        }
+        th, td {
+            border: 1px solid #8C7B5F; /* Border color */
+            padding: 15px;
+            text-align: center;
+        }
+        th {
+            background-color: #B2D235; /* Header background color */
+            color: white; /* Header text color */
+        }
+        td {
+            font-size: 20px; /* Increase font preview size */
         }
         .font-preview {
-            margin-top: 10px;
-            font-size: 18px;
+            font-size: 24px; /* Larger font size for previews */
             color: #555;
         }
         .footer {
             margin-top: 20px;
             padding: 10px;
+            text-align: center;
+            width: 100%;
         }
-        .footer a {
-            color: #5B513C; /* Link color */
+        .footer-link {
+            color: #8C7B5F; /* Link color */
             text-decoration: none;
         }
-        .footer a:hover {
+        .footer-link:hover {
             text-decoration: underline;
+        }
+        .logo {
+            margin-top: 20px;
+            max-width: 300px;
+            width: 100%;
         }
     </style>
 </head>
 <body>
+    <img src="Gatorface_logo_color.png" alt="Gatorface Logo" class="logo">
     <h1>Choose Your Custom Font</h1>
-    <div class="font-container">
-        <div class="font-item" style="font-family: 'Arial';">
-            Arial
-            <div class="font-preview">Sample Text</div>
-        </div>
-        <div class="font-item" style="font-family: 'Courier New';">
-            Courier New
-            <div class="font-preview">Sample Text</div>
-        </div>
-        <div class="font-item" style="font-family: 'Georgia';">
-            Georgia
-            <div class="font-preview">Sample Text</div>
-        </div>
-        <div class="font-item" style="font-family: 'Times New Roman';">
-            Times New Roman
-            <div class="font-preview">Sample Text</div>
-        </div>
-        <div class="font-item" style="font-family: 'Verdana';">
-            Verdana
-            <div class="font-preview">Sample Text</div>
-        </div>
-        <div class="font-item" style="font-family: 'Trebuchet MS';">
-            Trebuchet MS
-            <div class="font-preview">Sample Text</div>
-        </div>
-        <div class="font-item" style="font-family: 'Impact';">
-            Impact
-            <div class="font-preview">Sample Text</div>
-        </div>
-        <div class="font-item" style="font-family: 'Comic Sans MS';">
-            Comic Sans MS
-            <div class="font-preview">Sample Text</div>
-        </div>
-        <div class="font-item" style="font-family: 'Lucida Console';">
-            Lucida Console
-            <div class="font-preview">Sample Text</div>
-        </div>
-        <div class="font-item" style="font-family: 'Tahoma';">
-            Tahoma
-            <div class="font-preview">Sample Text</div>
-        </div>
-    </div>
+    <table>
+        <tr>
+            <th>Font Name</th>
+            <th>Sample Text</th>
+        </tr>
+        <tr>
+            <td style="font-family: 'Indie Flower';">Indie Flower</td>
+            <td class="font-preview" style="font-family: 'Indie Flower';">The Quick Brown Fox Jumps Over The Lazy Dog</td>
+        </tr>
+        <tr>
+            <td style="font-family: 'Cinzel';">Cinzel</td>
+            <td class="font-preview" style="font-family: 'Cinzel';">The Quick Brown Fox Jumps Over The Lazy Dog</td>
+        </tr>
+        <tr>
+            <td style="font-family: 'Bangers';">Bangers</td>
+            <td class="font-preview" style="font-family: 'Bangers';">The Quick Brown Fox Jumps Over The Lazy Dog</td>
+        </tr>
+        <tr>
+            <td style="font-family: 'Permanent Marker';">Permanent Marker</td>
+            <td class="font-preview" style="font-family: 'Permanent Marker';">The Quick Brown Fox Jumps Over The Lazy Dog</td>
+        </tr>
+        <tr>
+            <td style="font-family: 'Pacifico';">Pacifico</td>
+            <td class="font-preview" style="font-family: 'Pacifico';">The Quick Brown Fox Jumps Over The Lazy Dog</td>
+        </tr>
+        <tr>
+            <td style="font-family: 'Twinkle Star';">Twinkle Star</td>
+            <td class="font-preview" style="font-family: 'Twinkle Star';">The Quick Brown Fox Jumps Over The Lazy Dog</td>
+        </tr>
+        <tr>
+            <td colspan="2" style="font-size: 20px;">
+                <a href="https://fonts.google.com/" target="_blank" class="footer-link">Choose a Custom Font from Google Fonts</a>
+            </td>
+        </tr>
+    </table>
     <div class="footer">
-        <a href="https://creativemeadow.com" target="_blank">Visit Creative Meadow</a>
+        <a href="https://creativemeadow.com" target="_blank" class="footer-link">Visit Creative Meadow</a>
     </div>
 </body>
 </html>
