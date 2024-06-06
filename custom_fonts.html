@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Custom Woodworking</title>
+    <title>Custom Laser Engraving Fonts</title>
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Cinzel&family=Bangers&family=Permanent+Marker&family=Pacifico&family=Twinkle+Star&display=swap" rel="stylesheet">
     <style>
         @font-face {
@@ -40,94 +40,84 @@
             margin: 20px;
             border-collapse: collapse;
             width: 90%;
-            max-width: 600px;
+            max-width: 1200px;
         }
         th, td {
             border: 1px solid #8C7B5F; /* Border color */
-            padding: 20px;
+            padding: 15px;
             text-align: center;
         }
         th {
             background-color: #B2D235; /* Header background color */
             color: white; /* Header text color */
         }
-        .links a {
-            display: inline-block;
-            margin: 10px 0;
+        td {
+            font-size: 20px; /* Increase font preview size */
+        }
+        .font-preview {
+            font-size: 24px; /* Larger font size for previews */
+            color: #555;
+        }
+        .footer {
+            margin-top: 20px;
+            padding: 10px;
+            text-align: center;
+            width: 100%;
+        }
+        .footer-link {
             color: #8C7B5F; /* Link color */
             text-decoration: none;
-            font-size: 20px;
         }
-        .links a:hover {
+        .footer-link:hover {
             text-decoration: underline;
-        }
-        .search-box input[type="text"] {
-            padding: 10px;
-            font-size: 16px;
-            width: 80%;
-            max-width: 300px;
-            border: 1px solid #8C7B5F;
-            border-radius: 5px;
-        }
-        .search-box button {
-            margin-top: 10px; /* Increase spacing between text box and button */
-            padding: 10px 20px;
-            font-size: 16px;
-            background-color: #B2D235; /* Button background color */
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        .search-box button:hover {
-            background-color: #8C7B5F; /* Hover color */
         }
         .logo {
             margin-top: 20px;
             max-width: 300px;
             width: 100%;
         }
-        .note {
-            margin: 10px 0;
-            font-size: 14px;
-            color: #8C7B5F;
-        }
-        .explanation {
-            margin: 20px;
-            font-size: 16px;
-            color: #5B513C;
-            text-align: center;
-        }
     </style>
 </head>
 <body>
     <img src="Gatorface_logo_color.png" alt="Gatorface Logo" class="logo">
-    <h1>Custom Engraving</h1>
-    <div class="explanation">
-        You can choose one of the following options for your custom engraving:
-    </div>
+    <h1>Choose Your Custom Font</h1>
     <table>
         <tr>
-            <th>Text</th>
-            <th>Image</th>
+            <th>Font Name</th>
+            <th>Sample Text</th>
         </tr>
         <tr>
-            <td class="links">
-                <a href="custom_fonts.html">Choose Your Custom Font and Text</a>
-            </td>
-            <td>
-                <div class="search-box">
-                    <form action="https://creativemeadow.com/" method="get">
-                        <input type="hidden" name="post_type" value="product">
-                        <input type="text" name="s" placeholder="Search for an engravable image">
-                        <button type="submit">Search</button>
-                    </form>
-                    <div class="note">
-                        * Ignore the prices listed after the search. Each custom engraving is a flat $5 fee. Show the image to your artist once you've decided.
-                    </div>
-                </div>
+            <td style="font-family: 'Indie Flower';">Indie Flower</td>
+            <td class="font-preview" style="font-family: 'Indie Flower';">The Quick Brown Fox Jumps Over The Lazy Dog</td>
+        </tr>
+        <tr>
+            <td style="font-family: 'Cinzel';">Cinzel</td>
+            <td class="font-preview" style="font-family: 'Cinzel';">The Quick Brown Fox Jumps Over The Lazy Dog</td>
+        </tr>
+        <tr>
+            <td style="font-family: 'Bangers';">Bangers</td>
+            <td class="font-preview" style="font-family: 'Bangers';">The Quick Brown Fox Jumps Over The Lazy Dog</td>
+        </tr>
+        <tr>
+            <td style="font-family: 'Permanent Marker';">Permanent Marker</td>
+            <td class="font-preview" style="font-family: 'Permanent Marker';">The Quick Brown Fox Jumps Over The Lazy Dog</td>
+        </tr>
+        <tr>
+            <td style="font-family: 'Pacifico';">Pacifico</td>
+            <td class="font-preview" style="font-family: 'Pacifico';">The Quick Brown Fox Jumps Over The Lazy Dog</td>
+        </tr>
+        <tr>
+            <td style="font-family: 'Twinkle Star';">Twinkle Star</td>
+            <td class="font-preview" style="font-family: 'Twinkle Star';">The Quick Brown Fox Jumps Over The Lazy Dog</td>
+        </tr>
+        <tr>
+            <td colspan="2" style="font-size: 20px;">
+                <a href="https://fonts.google.com/" target="_blank" class="footer-link">Choose a Custom Font from Google Fonts</a>
             </td>
         </tr>
     </table>
+    <div class="footer">
+        <a href="index.html" class="footer-link">Back to Customization Options</a>
+    </div>
 </body>
 </html>
